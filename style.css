@@ -1,10 +1,15 @@
 
-.navbar-brand mb-0 h1 {
-    background-color: purple;
-    color: whitesmoke;
-    
+body {
+    background-image: url("./assets/screenshots/istockphoto-477110708-170667a.jpg");
+    background-size: cover ;
 }
 
+header {
+    background-color: lightskyblue;
+    font-size: 50px;
+    color: darkblue;
+    width: 70px;
+}
 
 
 
