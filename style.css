@@ -5,12 +5,39 @@ body {
 }
 
 header {
-    background-color: lightskyblue;
+    background-color: lightsteelblue;
     font-size: 50px;
     color: darkblue;
     width: 70px;
 }
 
 
+.form-label {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(8, 53, 234);
+    border:#666;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btn-primary:hover {background-color: #132478;}
+  
+  .btn-primary:active {
+    background-color: #0c0c4e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
  
