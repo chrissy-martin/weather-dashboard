@@ -27,16 +27,16 @@ header {
     outline: none;
     color: #fff;
     background-color: rgb(8, 53, 234);
-    border:#666;
+    border: rgb(155, 211, 241);
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px rgb(155, 211, 241);
   }
   
   .btn-primary:hover {background-color: #132478;}
   
   .btn-primary:active {
     background-color: #0c0c4e;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 5px rgb(155, 211, 241);
     transform: translateY(4px);
   }
 

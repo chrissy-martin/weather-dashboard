@@ -17,10 +17,5 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 
-//API call for key
-api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
- 
-//API call for city/Country
-https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={API key}
 
 
