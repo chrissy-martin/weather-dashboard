@@ -40,4 +40,21 @@ header {
     transform: translateY(4px);
   }
 
+  #city-container {
+    height: 150px;
+    width: 500px;
+    margin-left: 200px;
+  }
  
+  #title {
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    color: darkblue;
+    background-color: lightsteelblue;
+    height: 50px;
+  }
+#five-day-container{
+   height: 300px;
+   width: 1050px;
+}
