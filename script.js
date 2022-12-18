@@ -4,6 +4,7 @@ var lastCity = " ";
 var searchButton = document.getElementById("search");
 var searchHistory = document.getElementById("search-history");
 var citySearch = document.getElementById("city-search");
+var searchList = document.getElementById("search-list")
 
 
  
@@ -18,13 +19,13 @@ function getCurrentWeather(city) {
       })
       .then(function (data) {
         console.log(data);
-
+        // Get icons and values for current city
         var weatherIcon = data.weather[0].icon;
         var iconSrc = `https://openweathermap.org/img/w/${weatherIcon}.png`;
 
         var currentCity = $(`
             <h2 id="current-city">
-                ${data.name} <img src="${iconSrc}" alt="${data.weather[0].description}" />
+                ${data.name} ${data.dt_txt} <img src="${iconSrc}" alt="${data.weather[0].description}" />
             </h2>
             <p>Temperature: ${data.main.temp} °F</p>
             <p>Humidity: ${data.main.humidity}\%</p>
@@ -33,13 +34,18 @@ function getCurrentWeather(city) {
 
         $("#current-city").append(currentCity);
       });
-        
+
+      
+      localStorage.setItem("city", JSON.stringify(currentCity));
+      console.log(currentCity);  
 
   }
 
-  function fiveDayForecast() {
+  function fiveDayForecast(lat, lon) {
+    var lat = $('#current-city').val();
+    var lon = $('#current-city').val();
     futureForecast= $('#current-city').val();
-    var forecastURL="https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=" +
+    var forecastURL="https://api.openweathermap.org/data/2.5/weather?" + lat + "=35&" + lon + "=139&APPID=" +
     APIKey;
   
     fetch(forecastURL)
@@ -53,15 +59,15 @@ function getCurrentWeather(city) {
         var iconSrc = `https://openweathermap.org/img/w/${weatherIcon}.png`;
 
         var futureForecast = $(`
-            <p id="five-day">
-                ${data.name} <img src="${iconSrc}" alt="${data.weather[0].description}" />
-            </p>
+            <h2 id="five-day">
+                ${data.name} ${data.date} <img src="${iconSrc}" alt="${data.weather[0].description}" />
+            </h2>
             <p>Temperature: ${data.main.temp} °F</p>
             <p>Humidity: ${data.main.humidity}\%</p>
             <p>Wind Speed: ${data.wind.speed} MPH</p>
         `);
 
-    $("#current-city").append(futureForecast);
+    $("#five-day").append(futureForecast);
     });
 
   }
