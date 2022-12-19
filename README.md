@@ -11,18 +11,16 @@ Here is the deployed application: https://chrissy-martin.github.io/weather-dashb
 
 The following screenshots demonstrates functionality:
 
-![alt text](./assets/screenshots/SS1.png)
+![alt text](./assets/screenshots/ss1.png)
 
 Type in your city of choice into the search bar and click the search button.
-![alt text](./assets/screenshots/SS2.png)
+![alt text](./assets/screenshots/ss2.png)
 
 You will see the current weather conditions for that city on the right hand side.
-![alt text](./assets/screenshots/SS3.png)
+![alt text](./assets/screenshots/ss3.png)
 
 You will see a search history grow after each new search. You can click on any past city to get the current weather conditions.This is where my code is at currently and not finshed. 
-![alt text](./assets/screenshots/SS4.png)
-
-
+![alt text](./assets/screenshots/ss4.png)
 
 
 ## License
