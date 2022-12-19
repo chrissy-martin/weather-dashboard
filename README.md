@@ -1,21 +1,32 @@
 # Weather-Dashboard
-A 5 day weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-GIVEN a weather dashboard with form inputs
+
+## Description
+This is a 5-day weather dashboard. You can search for any city and the dashboard will pull up the current weather conditions, as well as weather conditions for the next 5 days. You can also see past city searches on the search history and click on the history to go back to that selesscted city's weather
+
+## Usage
+
+Enter in your city of choice and select search to view the current weather conditions and forecast for the next 5 days. Previous searches are saved in localStorage and search historys are available as buttons in order for easy access and re-searching of weather and forecasts.
+
+Here is the deployed application: https://chrissy-martin.github.io/weather-dashboard/
+
+The following screenshots demonstrates functionality:
+
+![alt text](./assets/screenshots/SS1.png)
+
+Type in your city of choice into the search bar and click the search button.
+![alt text](./assets/screenshots/SS2.png)
+
+You will see the current weather conditions for that city on the right hand side.
+![alt text](./assets/screenshots/SS3.png)
+
+You will see a search history grow after each new search. You can click on any past city to get the current weather conditions.This is where my code is at currently and not finshed. 
+![alt text](./assets/screenshots/SS4.png)
 
 
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
 
 
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
+## License
 
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-
-
+N/A
 
 
