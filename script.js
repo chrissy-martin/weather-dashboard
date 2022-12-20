@@ -94,6 +94,7 @@ $("#search").on("click", function(event) {
        
           
             for (let i = 2; i < data.list.length; i+= 8) {
+
                 var temp = data.list[i].main.temp;
                 var icon = data.list[i].weather[0].icon;
                 var wind = data.list[i].wind.speed;
@@ -102,13 +103,20 @@ $("#search").on("click", function(event) {
 
                 var forecastCard = $("<div>");
                 forecastCard.addClass("card-body");
-                // var tempEl = $("<p>");
+                var tempEl = $("<p>");
+                tempEl.addElement("p");
+                var windEl = $("<p>");
+                windEl.addElement("p");
+                var humidityEl = $("<p>");
+                humidityEl.addElement("p");
                 forecastCard.append(icon);
                 forecastCard.append(temp);
-                forecastCard.append(humidity);
                 forecastCard.append(wind);
-                 $("#five-day").append(forecastCard);  
+                forecastCard.append(humidity);
+                
+                $("#five-day").append(forecastCard); 
             };
-   
+
+            
           });
         }
